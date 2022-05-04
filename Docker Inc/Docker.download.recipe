@@ -13,6 +13,11 @@
 		<key>NAME</key>
 		<string>Docker</string>
 	</dict>
+	<key>Arguments</key>
+	<dict>
+  		<key>filename</key>
+  		<string>%NAME%-M1-%version%.pkg</string>
+	</dict>
 	<key>MinimumVersion</key>
 	<string>1.0.0</string>
 	<key>Process</key>
