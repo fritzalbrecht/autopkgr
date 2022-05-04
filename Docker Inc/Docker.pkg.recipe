@@ -8,6 +8,11 @@
 	<string>Downloads the latest version of Docker and creates a package.</string>
 	<key>Identifier</key>
 	<string>com.github.fritzalbrecht.pkg.Docker</string>
+	<key>Arguments</key>
+	<dict>
+  		<key>filename</key>
+  		<string>%NAME%-M1-%version%.pkg</string>
+	</dict>
 	<key>Input</key>
 	<dict>
 		<key>NAME</key>
