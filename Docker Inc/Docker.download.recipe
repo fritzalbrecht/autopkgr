@@ -7,7 +7,7 @@
 	<key>Description</key>
 	<string>Downloads the latest version of Docker.</string>
 	<key>Identifier</key>
-	<string>com.github.fritzalbrecht.download.Docker</string>
+	<string>com.github.fritzalbrecht.download.Docker-M1</string>
 	<key>Input</key>
 	<dict>
 		<key>NAME</key>
