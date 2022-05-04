@@ -24,6 +24,10 @@
 	<string>com.github.fritzalbrecht.download.Docker</string>
 	<key>Process</key>
 	<array>
+		<dict>    
+		    <key>pkgname</key>
+                    <string>%NAME%-M1-%version%</string>
+		</dict>
 		<dict>
 			<key>Processor</key>
 			<string>AppPkgCreator</string>
