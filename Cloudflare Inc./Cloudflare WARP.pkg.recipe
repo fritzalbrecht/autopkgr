@@ -23,7 +23,7 @@
 			<key>Arguments</key>
 			<dict>
 				<key>app_path</key>
-				<string>%RECIPE_CACHE_DIR%/%NAME%/Cloudflare WARP.app</string>
+				<string>%RECIPE_CACHE_DIR%/%NAME%/Cloudflare WARP.pkg</string>
 			</dict>
 			<key>Processor</key>
 			<string>AppPkgCreator</string>
