@@ -32,7 +32,11 @@
 	<key>ParentRecipe</key>
 	<string>com.github.fritzalbrecht.pkg.CloudflareWARP</string>
 	<key>Process</key>
+	<array>
+		<dict>
 			<key>Processor</key>
 			<string>JSSImporter</string>
+		</dict>
+	</array>
 </dict>
 </plist>
