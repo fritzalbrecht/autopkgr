@@ -14,7 +14,7 @@
 	<key>MinimumVersion</key>
 	<string>1.4.1</string>
 	<key>ParentRecipe</key>
-	<string>com.github.fritzalbrecht.download.CloudflareWarp</string>
+	<string>com.github.fritzalbrecht.download.CloudflareWARP</string>
 	<key>Process</key>
 	<array>
 		<dict>
