@@ -2,20 +2,41 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
-	<key>Comment</key>
-	<string>Created with Recipe Robot v2.2.0 (https://github.com/homebysix/recipe-robot)</string>
 	<key>Description</key>
-	<string>Downloads the latest version of Cloudflare WARP and creates a package.</string>
+	<string>Downloads and builds a package of the latest CloudFlare Warp for Mac</string>
 	<key>Identifier</key>
 	<string>com.github.fritzalbrecht.pkg.CloudflareWARP</string>
 	<key>Input</key>
 	<dict>
 		<key>NAME</key>
-		<string>Cloudflare WARP</string>
+		<string>CloudFlareWarp</string>
 	</dict>
 	<key>MinimumVersion</key>
-	<string>1.0.0</string>
+	<string>1.4.1</string>
 	<key>ParentRecipe</key>
-	<string>com.github.fritzalbrecht.download.CloudflareWARP</string>
+	<string>com.github.fritzalbrecht.download.CloudflareWarp</string>
+	<key>Process</key>
+	<array>
+		<dict>
+			<key>Arguments</key>
+			<dict>
+				<key>input_plist_path</key>
+				<string>%RECIPE_CACHE_DIR%/unpack/payload/Cloudflare WARP.app/Contents/Info.plist</string>
+			</dict>
+			<key>Processor</key>
+			<string>Versioner</string>
+		</dict>
+		<dict>
+			<key>Arguments</key>
+			<dict>
+				<key>pkg_path</key>
+				<string>%RECIPE_CACHE_DIR%/%NAME%-%version%.pkg</string>
+				<key>source_pkg</key>
+				<string>%RECIPE_CACHE_DIR%/unzip/Cloudflare_WARP.pkg</string>
+			</dict>
+			<key>Processor</key>
+			<string>PkgCopier</string>
+		</dict>
+	</array>
 </dict>
 </plist>
