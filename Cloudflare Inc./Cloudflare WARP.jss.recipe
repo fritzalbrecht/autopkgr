@@ -35,7 +35,6 @@
 	<array>
 			<key>Processor</key>
 			<string>JSSImporter</string>
-		</dict>
 	</array>
 </dict>
 </plist>
